@@ -2,7 +2,7 @@
 - name: Day 1 Operations - EC2 Linux Baseline
   # The 'env_prod' group was automatically created by the dynamic inventory
   # based on an EC2 tag of Key="Environment", Value="prod"
-  hosts: env_prod
+  hosts: all
   become: true
   tasks:
     - name: Update all packages (RedHat / Amazon Linux)
